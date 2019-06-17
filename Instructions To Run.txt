@@ -1,4 +1,5 @@
 Make sure MINGW and Flex are installed on your Windows Operating System.
+All the required files Terminals.txt, CFGLeftRecursionRemoved, Lexical_Analyzer.l and main.cpp should be in the same folder.
 
 1. Open Command Prompt.
 
