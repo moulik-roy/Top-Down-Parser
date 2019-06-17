@@ -1,0 +1,35 @@
+start_symb : data_type main ( ) { declaration_list stmt_list }
+declaration_list : data_type id_list ;
+data_type : int
+data_type : char
+data_type : float
+id_list : id id_list'
+id_list' : , id id_list'
+id_list' : ^
+stmt_list : ^
+stmt_list : if_else_stmt stmt_list' 
+stmt_list' : if_else_stmt stmt_list'
+stmt_list' : ^
+if_else_stmt : if ( cndtn ) { stmt_list } optional_else
+optional_else : ^
+optional_else : else { stmt_list }
+if_else_stmt : disp
+if_else_stmt : assignment
+assignment : read ( id ) ;
+assignment : id = factor ;
+disp : print ( id ) ;
+exp : term exp' 
+exp' : + term exp'
+exp' : - term exp'
+exp' : ^
+term : factor term'
+term' : * factor term'
+term' : / factor term'
+term' : ^
+factor : id
+factor : integer
+factor : fraction
+factor : ( exp )
+cndtn : exp relop exp
+relop : .lt.
+relop : .gt.
