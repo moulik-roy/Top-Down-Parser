@@ -2,7 +2,7 @@ The Top-Down Parser is for a C-like Language with the following constructs:
 Data Types : int, float, void.
 Conditional Statements : if-else. Nested if-else statements are supported. There may be if statements without else statements.
 Input/Output : read(x) which reads a value from standard input into variable x. print(x) which writes the value of variable x to standard output.
-Assignment Operator : = (Only integer and float values can be assigned to variables)
+Assignment Operator : = (Only integer or float value can be assigned to a variable)
 Arithmetic Operators : +, -, *, /
 Relational Operators : .lt. (less than), .gt. (greater than)
 The language has only one function main(). The main() function may contain arguments but no return statements.
