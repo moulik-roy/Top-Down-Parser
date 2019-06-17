@@ -1,0 +1,12 @@
+The Top-Down Parser is for a C-like Language with the following constructs:
+Data Types : int, float, void.
+Conditional Statements : if-else. Nested if-else statements are supported. There may be if statements without else statements.
+Input/Output : read(x) which reads a value from standard input into variable x. print(x) which writes the value of variable x to standard output.
+Assignment Operator : =
+Arithmetic Operators : +, -, *, /
+Relational Operators : .lt. (less than), .gt. (greater than)
+The language has only one function main(). The main() function may contain arguments but no return statements.
+
+Part- I : Developed a Context Free Grammer for the given C-like Language.
+Part- II : Developed a lexical analyzer using LEX to scan the stream of characters from a program written in the given C-like Language and generate the stream of tokens.
+Part- III : C++ implementation of a Top-Down Parser to parse a program written in the given C-like Language. Modules include FIRST, FOLLOW, Parsing Table Construction and Parsing.
